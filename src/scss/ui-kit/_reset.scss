@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  @apply font-base text-black bg-white;
+  @apply font-base text-white bg-black;
 }
 
 ::selection {
@@ -84,7 +84,7 @@ select {
     &:focus {
       -webkit-text-fill-color: theme("colors.black.DEFAULT");
       box-shadow             : inset 0 0 0 1000px theme("colors.white.DEFAULT");
-      border                 : 1px solid theme("colors.gray.DEFAULT");
+      border                 : 1px solid theme("colors.grey.DEFAULT");
       transition             : background-color 5000s ease-in-out 0s;
     }
   }

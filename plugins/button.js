@@ -15,8 +15,9 @@ module.exports = plugin(
         '--btn-color': theme('colors.black.DEFAULT'),
         '--btn-accent': theme('colors.white.DEFAULT'),
         color: 'var(--btn-color)',
+        fontFamily: 'var(--font-alt)',
         fontSize: theme('fontSize.16'),
-        fontWeight: 600,
+        fontWeight: 500,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -41,6 +42,11 @@ module.exports = plugin(
           border: '2px solid var(--color-none)'
         },
 
+        '&-main': {
+          background: 'radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 73.05%), radial-gradient(59.82% 533.8% at 30.65% 40.18%, rgba(168, 242, 100, 0.5) 0%, rgba(153, 153, 153, 0) 100%), #54B000',
+          borderBottom: '4px solid #326800'
+        },
+
         '&-contur': {
           border: '2px solid var(--btn-color)'
         },
@@ -62,6 +68,10 @@ module.exports = plugin(
         '&-light:focus': {
           backgroundColor: 'var(--btn-accent)',
           borderColor: 'var(--btn-color)'
+        },
+
+        '&-main:focus': {
+          backgroundColor: '#2b5800'
         },
 
         '&:active': {
@@ -93,6 +103,10 @@ module.exports = plugin(
           '&-light:hover': {
             backgroundColor: 'var(--btn-accent)',
             borderColor: 'var(--btn-color)'
+          },
+
+          '&-main:hover': {
+            backgroundColor: '#2b5800'
           }
         }
       }
@@ -136,7 +150,7 @@ module.exports = plugin(
 
           return {
 
-            borderRadius: '6px',
+            borderRadius: '12px',
             height: size,
             paddingInline: `calc(${size} / 2)`
 

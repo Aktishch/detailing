@@ -26,7 +26,7 @@ module.exports = {
       sm: 575.98 + 'px',
       md: 767.98 + 'px',
       lg: 991.98 + 'px',
-      xl: 1199.98 + 'px',
+      xl: 1299.98 + 'px',
       xxl: 1999.98 + 'px'
 
     },
@@ -34,26 +34,19 @@ module.exports = {
     colors: {
 
       primary: {
-        DEFAULT: '#af1a4c',
-        dark: '#831339'
-      },
-
-      second: {
-        DEFAULT: '#d7a751',
-        dark: '#c7902e'
+        DEFAULT: '#9BE954'
       },
 
       black: {
-        DEFAULT: '#000000'
+        DEFAULT: '#010101'
       },
 
       white: {
-        DEFAULT: '#ffffff'
+        DEFAULT: '#FFFFFF'
       },
 
       gray: {
-        DEFAULT: '#b2b2b2',
-        dark: '#999'
+        DEFAULT: '#121212'
       },
 
       grey: {
@@ -61,16 +54,17 @@ module.exports = {
       },
 
       dark: {
-        DEFAULT: '#303030'
+        DEFAULT: '#242424'
       },
 
       red: {
-        DEFAULT: '#be1b1b'
+        DEFAULT: '#F40407'
       },
 
       green: {
-        DEFAULT: '#27ae60'
+        DEFAULT: '#4FF1C0'
       }
+
 
     },
 
@@ -222,12 +216,12 @@ module.exports = {
 
     size: {
 
-      xs: '28px',
-      sm: '36px',
-      md: '40px',
-      lg: '45px',
-      xl: '56px',
-      xxl: '64px'
+      xs: '30px',
+      sm: '40px',
+      md: '50px',
+      lg: '60px',
+      xl: '72px',
+      xxl: '84px'
 
     }
 
@@ -244,7 +238,7 @@ module.exports = {
     require('./plugins/input'),
     require('./plugins/button'),
     require('./plugins/switch'),
-    // require('./plugins/animation')
+    require('./plugins/animation')
 
   ]
 

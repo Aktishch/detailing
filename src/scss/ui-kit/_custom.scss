@@ -77,19 +77,28 @@
 
     &-prev:not(.default),
     &-next:not(.default) {
-      width        : 50px;
-      height       : 50px;
+      top          : 20px;
+      width        : 28px;
+      height       : 28px;
       position     : absolute;
       border-radius: 50%;
     }
 
     @screen md {
+
+      &-prev:not(.default),
+      &-next:not(.default) {
+        top   : 50%;
+        width : 74px;
+        height: 74px;
+      }
+
       &-prev:not(.default) {
-        left: -25px;
+        left: -40px;
       }
 
       &-next:not(.default) {
-        right: -25px;
+        right: -40px;
       }
     }
   }

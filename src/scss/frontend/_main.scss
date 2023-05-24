@@ -1,3 +1,8 @@
+// Градиент
+.gradient {
+  background-image: linear-gradient(89.97deg, #9BE954 0.02%, #70B92B 17.94%, #54E9A1 36.38%, #54E9A1 55.81%, #54C5E9 66.27%, #034AFF 84.63%);
+}
+
 // Шапка документа
 .header {
   transform: translateY(var(--top));
@@ -39,6 +44,45 @@
       &--green {
         background: linear-gradient(90.16deg, #9BE954 82.33%, rgba(238, 250, 85, 0) 99.39%);
       }
+    }
+  }
+}
+
+// Квиз
+.quiz {
+  &-slider[data-quiz="stop"] &-next {
+    pointer-events: none;
+    opacity       : 0.5;
+  }
+
+  &-slider[data-quiz-end] &-next {
+    display: none;
+  }
+
+  &-slider[data-quiz-end] &-submit {
+    display: flex;
+  }
+
+  &__radio:checked+&__info {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 73.05%), radial-gradient(59.82% 533.8% at 30.65% 40.18%, rgba(168, 242, 100, 0.5) 0%, rgba(153, 153, 153, 0) 100%), #54B000;
+  }
+
+  &__radio:checked+&__info &__arrow {
+    visibility: visible;
+    opacity   : 1;
+  }
+
+  &__transport {
+    &::before {
+      content   : "";
+      background: #ACACAC;
+      opacity   : 0.2;
+      filter    : blur(100px);
+      width     : 250px;
+      height    : 250px;
+      position  : absolute;
+      inset     : 0;
+      margin    : auto;
     }
   }
 }

@@ -1,0 +1,192 @@
+<div class="dialog dialog-lg relative rounded-4 md:rounded-8 overflow-hidden py-10 lg:py-20">
+  <div class="gradient absolute -top-[240px] sm:-top-[550px] left-0 right-0 opacity-40 blur-[100px] rotate-180 w-[330px] h-[330px] sm:w-[645px] sm:h-[645px] mx-auto"></div>
+  <form class="form relative" data-form="submit">
+    <div class="quiz-slider relative" data-quiz="stop">
+      <div class="quiz-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-auto px-4 md:px-10 lg:px-16" data-quiz-slide>
+            <div class="w-full h-full">
+              <h3 class="font-alt font-medium uppercase text-center text-24 md:text-26 lg:text-28 leading-3 tracking-tight mb-9 md:mb-12 lg:mb-16">КАК ВЫ ХОТИТЕ ПРЕОБРАЗИТЬ СВОЙ АВТО?</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Полировка кузова" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Полировка кузова</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Химчистка салона" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-5 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Химчистка салона</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Покрытие кузова керамикой" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Покрытие кузова керамикой</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Мойка подкапотного пространства" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Мойка подкапотного пространства</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Полировка фар" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Полировка фар</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+                <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                  <input class="quiz__radio hidden" type="radio" value="Другое" name="service">
+                  <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-4 pr-4 pl-4 sm:pl-8 duration-2">
+                    <span class="font-semibold text-14 sm:text-16">Другое</span>
+                    <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                      <use xlink:href="img/icons.svg#check">
+                    </svg>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-4 md:px-10 lg:px-16" data-quiz-slide>
+            <div class="w-full h-full">
+              <h3 class="font-alt font-medium uppercase text-center text-24 md:text-26 lg:text-28 leading-3 tracking-tight mb-9 md:mb-12 lg:mb-16">Какой у вас автомобиль</h3>
+              <div class="quiz__transport transport-slider relative">
+                <input data-quiz-input type="hidden" value="Седан" name="transport">
+                <div class="transport-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide h-auto" data-slide-active="Седан">
+                      <p class="font-semibold text-center text-16 leading-4">Седан</p>
+                      <div class="pack pack-rect-md md:pack-rect-sm w-full md:max-w-[600px] mx-auto">
+                        <picture>
+                          <source srcset="img/pictures/transport-1.webp" type="image/webp">
+                          <img class="image image-scale-down" src="img/pictures/transport-1.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide h-auto" data-slide-active="Купе">
+                      <p class="font-semibold text-center text-16 leading-4">Купе</p>
+                      <div class="pack pack-rect-md md:pack-rect-sm w-full md:max-w-[600px] mx-auto">
+                        <picture>
+                          <source srcset="img/pictures/transport-1.webp" type="image/webp">
+                          <img class="image image-scale-down" src="img/pictures/transport-1.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="swiper-button-prev btn btn-white btn-contur md:text-30" data-waved="dark">
+                  <svg class="icon">
+                    <use xlink:href="img/icons.svg#arrow-left">
+                  </svg>
+                </button>
+                <button class="swiper-button-next btn btn-white btn-contur md:text-30" data-waved="dark">
+                  <svg class="icon">
+                    <use xlink:href="img/icons.svg#arrow-right">
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-4 md:px-10 lg:px-16" data-quiz-slide>
+            <div class="w-full h-full">
+              <h3 class="font-alt font-medium uppercase text-center text-24 md:text-26 lg:text-28 leading-3 tracking-tight mb-9 md:mb-12 lg:mb-16">ЕСТЬ ЛИ У ВАС <span class="hidden md:block">ДОПОЛНИТЕЛЬНЫЙ</span><br class="md:hidden"><span class="md:hidden">ДОП.</span> КОММЕНТАРИЙ?</h3>
+              <label class="form-label mb-5" data-label="input">
+                <span class="font-semibold text-16 leading-4 mb-2">Ваш комментарий</span>
+                <div class="form-wrapper">
+                  <div class="input-cover">
+                    <textarea class="input h-[300px] md:h-[190px]" data-input type="text" placeholder="Напишите.." name="text"></textarea>
+                  </div>
+                  <span class="form-error" data-error>Пожалуйста, оставьте комментарий!</span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-4 md:px-10 lg:px-16" data-quiz-slide>
+            <h3 class="font-alt font-medium uppercase text-center text-24 md:text-26 lg:text-28 leading-3 tracking-tight mb-9 md:mb-12 lg:mb-16">Как с вами лучше связаться?</h3>
+            <div class="flex flex-col gap-3 md:gap-6 w-full max-w-[390px] mx-auto">
+              <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                <input class="quiz__radio hidden" type="radio" value="WhatsApp" name="feedback">
+                <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-3 px-3 md:px-4 duration-2">
+                  <div class="flex items-center">
+                    <img class="icon text-26 md:text-32 mr-4 md:mr-8" src="img/pictures/wa.svg" alt="">
+                    <span class="font-semibold text-14 sm:text-16">WhatsApp</span>
+                  </div>
+                  <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                    <use xlink:href="img/icons.svg#check">
+                  </svg>
+                </div>
+              </label>
+              <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                <input class="quiz__radio hidden" type="radio" value="Telegram" name="feedback">
+                <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-3 px-3 md:px-4 duration-2">
+                  <div class="flex items-center">
+                    <img class="icon text-26 md:text-32 mr-4 md:mr-8" src="img/pictures/tg.svg" alt="">
+                    <span class="font-semibold text-14 sm:text-16">Telegram</span>
+                  </div>
+                  <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                    <use xlink:href="img/icons.svg#check">
+                  </svg>
+                </div>
+              </label>
+              <label class="block relative rounded-3 overflow-hidden cursor-pointer" data-waved="light">
+                <input class="quiz__radio hidden" type="radio" value="Звонок" name="feedback">
+                <div class="quiz__info flex items-center justify-between gap-2 bg-dark pointer-events-none h-[46px] sm:h-[56px] py-3 px-3 md:px-4 duration-2">
+                  <div class="flex items-center">
+                    <img class="icon text-26 md:text-32 mr-4 md:mr-8" src="img/pictures/tel.svg" alt="">
+                    <span class="font-semibold text-14 sm:text-16">Звонок</span>
+                  </div>
+                  <svg class="quiz__arrow icon text-20 sm:text-24 invisible opacity-0 duration-3">
+                    <use xlink:href="img/icons.svg#check">
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-4 md:px-10 lg:px-16" data-quiz-slide>
+            <div class="w-full h-full">
+              <h3 class="font-alt font-medium uppercase text-center text-24 md:text-26 lg:text-28 leading-3 tracking-tight mb-9 md:mb-12 lg:mb-16">Ваш номер телефона</h3>
+              <div class="w-full max-w-[390px] mx-auto">
+                <label class="form-label mb-5" data-label="input">
+                  <span class="font-semibold text-16 leading-4 mb-2">Введите телефон</span>
+                  <div class="form-wrapper">
+                    <div class="input-cover">
+                      <input class="input" data-input="tel" type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" name="tel">
+                    </div>
+                    <span class="form-error" data-error>Пожалуйста, введите ваш номер!</span>
+                  </div>
+                </label>
+                <p class="font-normal text-16 leading-4 mb-5">Мы свяжемся с вами по указанному номеру</p>
+                <div class="link font-normal text-center text-12 leading-4 opacity-60" data-fancybox-dialog data-type="ajax" data-src="dialogs/dialog-politics.html">
+                  Отправляя форму, Вы даете согласие <br> на обработку Ваших персональных данных
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-5 mt-6">
+        <button class="quiz-submit swiper-button-next default hidden btn btn-main btn-lg btn-fill inset-0 uppercase w-full max-w-[320px] mt-0" data-waved="dark" type="submit">отправить заявку</button>
+        <button class="quiz-next swiper-button-next default btn btn-main btn-lg btn-fill inset-0 uppercase w-full max-w-[320px] mt-0" data-waved="dark" type="button">следующий вопрос</button>
+        <button class="quiz-prev swiper-button-prev default btn btn-white btn-lg inset-0 uppercase w-full max-w-[320px] mt-0" data-waved="light" type="button">назад</button>
+      </div>
+    </div>
+  </form>
+</div>

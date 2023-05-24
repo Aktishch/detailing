@@ -10,8 +10,6 @@ module.exports = {
 
   ],
 
-  darkMode: 'class',
-
   corePlugins: {
 
     container: false
@@ -218,7 +216,7 @@ module.exports = {
 
       xs: '30px',
       sm: '40px',
-      md: '50px',
+      md: '56px',
       lg: '60px',
       xl: '72px',
       xxl: '84px'
@@ -231,13 +229,11 @@ module.exports = {
 
     require('./plugins/container'),
     require('./plugins/dialog'),
-    require('./plugins/card'),
     require('./plugins/pack'),
     require('./plugins/image'),
     require('./plugins/form'),
     require('./plugins/input'),
     require('./plugins/button'),
-    require('./plugins/switch'),
     require('./plugins/animation')
 
   ]

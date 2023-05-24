@@ -54,13 +54,13 @@ module.exports = plugin(
           justifyContent: 'center',
           textAlign: 'center',
           position: 'absolute',
-          left: 0,
-          right: 0,
+          left: '5px',
+          right: '5px',
           bottom: '-16px',
           height: '16px',
           opacity: 0,
           visibility: 'hidden',
-          borderRadius: '4px',
+          borderRadius: '12px',
           transition: '0.3s ease'
         }
       }

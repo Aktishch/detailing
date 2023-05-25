@@ -1,3 +1,5 @@
+import compare from './compare'
+
 const init = (): void => {
 
   const listings = document.querySelectorAll('*[data-listing]') as NodeListOf<Element>
@@ -26,6 +28,8 @@ const init = (): void => {
         if (!items[i] || items.length == count) show.remove()
 
       }
+
+      compare.init()
 
     }) as EventListener)
 

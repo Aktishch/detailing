@@ -26,7 +26,7 @@ const init = (): void => {
 
     const compareStart = (event: Event): void => {
 
-      if ((event.target as HTMLElement).closest('[data-compare]')) {
+      if ((event.target as HTMLElement).closest('[data-compare-change]')) {
 
         scrollbar.hidden()
 

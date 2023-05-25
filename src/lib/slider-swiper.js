@@ -20,7 +20,6 @@ const feedbackQuiz = () => {
     spaceBetween: 30,
     allowTouchMove: false,
     watchSlidesProgress: true,
-    grabCursor: true,
 
     on: {
 
@@ -58,6 +57,7 @@ const feedbackQuiz = () => {
     spaceBetween: 30,
     watchSlidesProgress: true,
     loop: true,
+    grabCursor: true,
 
     on: {
 

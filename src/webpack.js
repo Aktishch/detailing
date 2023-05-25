@@ -8,6 +8,7 @@ import animation from './ts/animation'
 import waved from './ts/waved'
 import listing from './ts/listing'
 import formSubmit from './ts/form-submit'
+import formInputs from './ts/form-inputs'
 import maskTel from './ts/mask-tel'
 import quiz from './ts/quiz'
 import compare from './ts/compare'
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   waved.init()
   listing.init()
   formSubmit.init()
+  formInputs.init()
   maskTel.init()
   quiz.init()
   compare.init()

@@ -1,6 +1,16 @@
 import formValidate from './functions/form-validate'
 import dialog from './functions/dialog'
 
+declare global {
+
+  interface Window {
+
+    ym: any
+
+  }
+
+}
+
 const formSubmit = (event: Event): void => {
 
   event.preventDefault()
@@ -29,6 +39,8 @@ const formSubmit = (event: Event): void => {
       return response.text()
 
     }).then((response: any): void => {
+
+      window.ym(93861170,'reachGoal','zayavka')
 
       dialog.close()
 
